@@ -10,6 +10,16 @@ class Figura
         double a;
         double b;
     public:
+    
+        Figura(){a = 2; b = 3;}
+        Figura(double aa, double bb){a = aa; b = bb;}
+        Figura(const Figura &f){a = f.a; b = f.b;}
+
+        void setStrA(double A) { a = A; }
+        void setStrB(double B) { b = B; }
+
+        double getStrA() const { return a; }
+        double getStrB() const { return b; }
         double getOPravougaonika()
         {
             double O = 2*(a+b);
