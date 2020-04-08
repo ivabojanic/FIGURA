@@ -5,11 +5,12 @@
 
 class Krug : public Elipsa
 {
-    public:
-        Krug() : Elipsa(2,2){getObim();getPovrsina();}
-        Krug(double aa) : Elipsa(aa, aa) {getObim();getPovrsina();}
-        Krug(const Krug &k) : Elipsa(k.a, k.b) {getObim();getPovrsina();}
+public:
+    Krug() : Elipsa(2.00,2.00){}
+    Krug(double x) : Elipsa(x,x){}
+    Krug(const Krug &x) : Elipsa(x){}
 };
 
 #endif // KRUG_HPP_INCLUDED
+
 
