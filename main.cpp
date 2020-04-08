@@ -5,7 +5,7 @@
 #include "VALJAK.hpp"
 #include "KRUG.hpp"
 #include "KVADRAT.hpp"
-#include "OBLIK.hpp"
+#include "OBLIKK.hpp"
 
 using namespace std;
 
