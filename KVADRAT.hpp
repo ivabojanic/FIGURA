@@ -1,4 +1,3 @@
-
 #ifndef KVADRAT_HPP_INCLUDED
 #define KVADRAT_HPP_INCLUDED
 
@@ -6,10 +5,13 @@
 
 class Kvadrat : public Pravougaonik
 {
-    public:
-        Kvadrat() : Pravougaonik(2,2){getObimm();getPovrsinaa();}
-        Kvadrat(double aa) : Pravougaonik(aa, aa) {getObimm();getPovrsinaa();}
-        Kvadrat(const Kvadrat &kv) : Pravougaonik(kv.a, kv.b) {getObimm();getPovrsinaa();}
+private:
+    double stranicaA;
+public:
+    Kvadrat() : Pravougaonik(10.00,10.00){}
+    Kvadrat(double x) : Pravougaonik(x,x){}
+    Kvadrat(const Kvadrat &x) : Pravougaonik(x){}
 };
 
 #endif // KVADRAT_HPP_INCLUDED
+
